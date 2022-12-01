@@ -1,23 +1,30 @@
 package condition;
 
+import java.util.Scanner;
+
 public class IfStatement {
 
 	public static void main(String[] args) {
 
-		int a = -5;
 		
-		if (10 == 10) {
-			System.out.println("the 2 numbers are equal");
-		}
 		
-		int b = 7;
-		if(b % 2 == 0) {
+//		if (10 == 10) {
+//			System.out.println("the 2 numbers are equal");
+//		}
+		
+		System.out.println("please enter a number");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		
+		if(a % 2 == 0) {
 			System.out.println("this number is even");
 		}else {
 			System.out.println("this number is odd");
 		}
 		
-		if(a > 0) {
+		System.out.println("please enter another number");
+		int b = sc.nextInt();
+		if(b > 0) {
 			System.out.println("this number is positive");
 		}else if(a < 0) {
 			System.out.println("this number is negative");
